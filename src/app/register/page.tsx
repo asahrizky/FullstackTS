@@ -1,11 +1,10 @@
 "use client";
 
-import { useState } from "react";
-import { Box, Container, Tab, Tabs, Paper } from "@mui/material";
-import LoginForm from "../components/auth/LoginForm";
+import { Box, Container, Paper } from "@mui/material";
+import RegisterForm from "../../components/auth/RegisterForm";
 import Link from "next/link";
 
-export default function Home() {
+export default function Register() {
   return (
     <Container component="main" maxWidth="xs">
       <Box
@@ -24,13 +23,10 @@ export default function Home() {
             borderRadius: 2,
           }}
         >
-          <LoginForm />
+          <RegisterForm />
           <Box sx={{ mt: 2, textAlign: "center" }}>
-            <Link
-              href="/register"
-              style={{ color: "#1976d2", textDecoration: "none" }}
-            >
-              Don&apos;t have an account? Register here
+            <Link href="/" style={{ color: "#1976d2", textDecoration: "none" }}>
+              Already have an account? Login here
             </Link>
           </Box>
         </Paper>
