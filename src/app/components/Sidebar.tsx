@@ -53,7 +53,7 @@ export default function Sidebar() {
   };
 
   const menuItems = [
-    { text: "Dashboard", icon: <Home />, path: "/" },
+    { text: "Dashboard", icon: <Home />, path: "/home" },
     { text: "Users", icon: <People />, path: "/users" },
     { text: "Product", icon: <Mail />, path: "/Product" },
     { text: "Hasil Penjualan", icon: <Settings />, path: "/History" },
